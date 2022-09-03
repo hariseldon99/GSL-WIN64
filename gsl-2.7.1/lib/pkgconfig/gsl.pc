@@ -1,0 +1,11 @@
+prefix=/home/daneel/MEGA/GSL-WIN64/GSL
+exec_prefix=/home/daneel/MEGA/GSL-WIN64/GSL
+libdir=/home/daneel/MEGA/GSL-WIN64/GSL/lib
+includedir=/home/daneel/MEGA/GSL-WIN64/GSL/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.7.1
+Libs: -L/home/daneel/MEGA/GSL-WIN64/GSL/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/home/daneel/MEGA/GSL-WIN64/GSL/include
