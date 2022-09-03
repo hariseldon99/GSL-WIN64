@@ -1,8 +1,8 @@
 #! /bin/sh
 
-prefix=/home/daneel/MEGA/GSL-WIN64/GSL
-exec_prefix=/home/daneel/MEGA/GSL-WIN64/GSL
-includedir=/home/daneel/MEGA/GSL-WIN64/GSL/include
+prefix=/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1
+exec_prefix=/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1
+includedir=/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1/include
 
 usage()
 {
@@ -58,16 +58,16 @@ while test $# -gt 0; do
 	;;
 
     --cflags)
-       	echo -I/home/daneel/MEGA/GSL-WIN64/GSL/include 
+       	echo -I/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1/include 
        	;;
 
     --libs)
         : ${GSL_CBLAS_LIB=-lgslcblas}
-	echo -L/home/daneel/MEGA/GSL-WIN64/GSL/lib -lgsl $GSL_CBLAS_LIB -lm
+	echo -L/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1/lib -lgsl $GSL_CBLAS_LIB -lm
        	;;
 
     --libs-without-cblas)
-	echo -L/home/daneel/MEGA/GSL-WIN64/GSL/lib -lgsl -lm
+	echo -L/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1/lib -lgsl -lm
        	;;
     *)
 	usage

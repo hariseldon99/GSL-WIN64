@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/daneel/MEGA/GSL-WIN64/GSL/lib'
+libdir='/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1/lib'

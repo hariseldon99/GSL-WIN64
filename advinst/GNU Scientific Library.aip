@@ -361,7 +361,7 @@
     <ROW File="gslref.info" Component_="gslref.info" FileName="GSL-RE~1.INF|gsl-ref.info" Attributes="0" SourcePath="..\gsl-2.7.1\share\info\gsl-ref.info" SelfReg="false"/>
     <ROW File="gsl.m4" Component_="gsl.m4" FileName="gsl.m4" Attributes="0" SourcePath="..\gsl-2.7.1\share\aclocal\gsl.m4" SelfReg="false"/>
     <ROW File="gslref.info_1" Component_="gslref.info_1" FileName="GSL-RE~1.INF|gsl-ref.info" Attributes="0" SourcePath="..\gsl-2.7.1\share\info\gsl-ref.info" SelfReg="false"/>
-    <ROW File="GNUScientificLibraryReferenceManual.url" Component_="gslref.info_1" FileName="GNUSCI~1.URL|GNU Scientific Library Reference Manual.url" Attributes="0" SourcePath="..\gsl-2.7.1\share\info\GNU Scientific Library Reference Manual.url" SelfReg="false"/>
+    <ROW File="gslref.pdf" Component_="gslref.info_1" FileName="gsl-ref.pdf" Attributes="0" SourcePath="..\gsl-2.7.1\share\info\gsl-ref.pdf" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>

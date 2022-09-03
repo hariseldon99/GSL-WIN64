@@ -17,7 +17,7 @@ old_library='libgsl.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' /home/daneel/MEGA/GSL-WIN64/GSL/lib/libgslcblas.la'
+dependency_libs=' /home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1/lib/libgslcblas.la'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/daneel/MEGA/GSL-WIN64/GSL/lib'
+libdir='/home/daneel/gitrepos/GSL-WIN64/gsl-2.7.1/lib'
