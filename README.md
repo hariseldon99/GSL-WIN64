@@ -1,2 +1,2 @@
 # GSL-WIN64
-Standalone Installer for the GNU Scientific Library
+Standalone 64-bit Windows Installer for the GNU Scientific Library
