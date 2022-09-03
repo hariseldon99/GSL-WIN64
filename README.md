@@ -23,7 +23,7 @@ Both packages are available in the Ubuntu repositories
 
 In addition, the EnVar Plug-in for NSIS needs to be installed. Download from [The EnVar Plugin Page](https://nsis.sourceforge.io/EnVar_plug-in)
 
-In a shall, navigate to the GSL source directory (say, <GSL-WIN64>) and cross-compile for windows with 
+In a shell, navigate to the GSL source directory (say, <GSL-WIN64>) and cross-compile for windows with 
 
     $ ./configure --host=x86_64-w64-mingw32 --prefix=<GSL-WIN64>/gsl-2.7.1
     $ make
