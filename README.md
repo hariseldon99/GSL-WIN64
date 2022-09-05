@@ -1,5 +1,9 @@
 # GSL-WIN64
-Standalone 64-bit Windows Installer for the GNU Scientific Library. Can be installed without dependencies. Use with IDEs such as [Code::Blocks](https://www.codeblocks.org/)
+Standalone 64-bit Windows Installer for the [GNU Scientific Library](https://www.gnu.org/software/gsl/). Can be installed without dependencies. Use from the [powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview) or with any IDE such as [Code::Blocks](https://www.codeblocks.org/), [geany](https://www.geany.org/) or [VS Code](https://code.visualstudio.com/). Tested with codeblocks.
+
+If you just want to download and install the libraries, [click here](https://github.com/hariseldon99/GSL-WIN64/releases/) to obtain the installer.
+
+If you want to build the installer from scratch, read on.
 
 # Build Instructions
 
@@ -11,16 +15,16 @@ Let's also say that the latest version of GSL is stored in the environment varia
 
     GSL_VERSION=2.7.1
 
-The values need to be changed to meet your requirements. You can set them explicitly if you want.
+The values need to be changed to meet your requirements. You can set them explicitly if you want by running (assuming bash shell or zsh) the [export](https://devconnected.com/set-environment-variable-bash-how-to/) command
 
-## Obtain GSL
+### Obtain GSL
 Download the latest tarball of the GNU Scientific Library Source Code:
 
     $ cd $GSL_WIN64DIR
     $ wget https://mirror.ibcp.fr/pub/gnu/gsl/gsl-latest.tar.gz
     $ tar zxvf gsl-latest.tar.gz src/
 
-## Cross-Compile
+### Cross-Compile
 To prepare GNU Scientific Library for Windows, download the source code and cross-compile on Linux.
 
 On Linux, download the latest gsl tarball, then install the following dependencies using your Linux package manager
@@ -39,7 +43,7 @@ In a shell, cross-compile for windows with
     $ make
     $ make install
 
-## Build Windows Executable
+### Build Windows Executable
 
 Once cross-compilation is complete, build the Windows Installer executable in the same shell with:
     
