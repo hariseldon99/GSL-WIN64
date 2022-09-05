@@ -1,13 +1,15 @@
 # GSL-WIN64
 Standalone 64-bit Windows Installer for the [GNU Scientific Library](https://www.gnu.org/software/gsl/). Can be installed without dependencies. Use from the [powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview) or with any IDE such as [Code::Blocks](https://www.codeblocks.org/), [geany](https://www.geany.org/) or [VS Code](https://code.visualstudio.com/). Tested with codeblocks.
 
+# Download
+
 If you just want to download and install the libraries, [click here](https://github.com/hariseldon99/GSL-WIN64/releases/) to obtain the installer.
 
-If you want to build the installer from scratch, read on.
 
 # Build Instructions
+If you want to build the installer from scratch, read on.
 
-Instructions to build the Windows Installer on any Linux distribution. Let's say that this repo has been cloned to the directory given by the environment variable: 
+Here are the instructions to build the Windows Installer on any Linux distribution. Let's say that this repo has been cloned to the directory given by the environment variable: 
 
     GSL_WIN64DIR=/home/me/gitrepos/GSL-WIN64.
 
@@ -51,3 +53,6 @@ Once cross-compilation is complete, build the Windows Installer executable in th
     $ makensis GSL-WIN64.nsi
 
 It'll create the "GSL-WIN64.exe" file in $GSL_WIN64DIR.
+
+# License
+GSL-WIN64 is an installer for GSL, therefore inherits the [GPL license](http://www.gnu.org/copyleft/gpl.html).
