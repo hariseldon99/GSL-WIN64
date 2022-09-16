@@ -133,19 +133,12 @@ section "uninstall"
 	delete "$SMPROGRAMS\${COMPANYNAME}\${APPNAME}-doc.lnk"
 	# Try to remove the Start Menu folder - this will only happen if it is empty
 	rmDir "$SMPROGRAMS\${COMPANYNAME}"
-
-	# Remove files
-	delete $INSTDIR\gnu_icon.ico
-
-        # Add any other files for the install directory (license files, app data, etc) here
-        rmDir /r /REBOOTOK $INSTDIR\"${APPNAME}\"
-
+	
+	# Remove everything
+	rmDir /r /REBOOTOK $INSTDIR\
 
 	# Always delete uninstaller as the last action
 	delete $INSTDIR\uninstall.exe
-
-	# Try to remove the install directory - this will only happen if it is empty
-	rmDir $INSTDIR
 
 	# Remove uninstaller information from the registry
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${COMPANYNAME} ${APPNAME}"
