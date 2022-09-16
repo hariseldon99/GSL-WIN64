@@ -1,15 +1,20 @@
 # GSL-WIN64
 Standalone 64-bit Windows Installer for the [GNU Scientific Library](https://www.gnu.org/software/gsl/). Can be installed without dependencies. Use from the [powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview) or with any IDE such as [Code::Blocks](https://www.codeblocks.org/), [geany](https://www.geany.org/) or [VS Code](https://code.visualstudio.com/). Tested with codeblocks.
 
-# Download
+# Download and Install
 
 If you just want to download and install the libraries, [click here](https://github.com/hariseldon99/GSL-WIN64/releases/) to obtain the installer.
 
+The installer will install the GSL libraries into a folder of your choice (defaults to 'C:\Program Files\GSL_W64\gsl-x.y.z' where 'x.y.z' is the version number) and makes registry entries for the uninstaller. 
+
+Note that if you install other (earlier or later) versions later, they will coexist with older installations. Therefore, it is possible to have multiple versions, and old versions will not be uninstalled automatically. However, the installer tells the system (via the 'PATH' environment variable) that GSL path can be found in the value of the variable 'GSL_LIBRARY_PATH', which is set to the folder where you told the installer to put GSL. So if you need to compile/run programs with other versions, you'll have to (gingerly) edit the 'GSL_LIBRARY_PATH' environment variable afterwards. I advise against editing 'PATH' manually unless you absolutely have to.
 
 # Build Instructions
 If you want to build the installer from scratch, read on.
 
-Here are the instructions to build the Windows Installer on any Linux distribution. Let's say that this repo has been cloned to the directory given by the environment variable: 
+Here are the instructions to build the Windows Installer on any Linux distribution. If you want to build on Windows, simply install [MSYS2](https://www.msys2.org/) and continue inside the bash shell installed by it.
+
+Let's say that this repo has been cloned to the directory given by the environment variable: 
 
     GSL_WIN64DIR=/home/me/gitrepos/GSL-WIN64.
 
@@ -45,6 +50,8 @@ In a shell, cross-compile for windows with
     $ make
     $ make install
 
+**Note:** If you're compiling natively on Windows, then simply run the './configure' command above without the '--host' flag.
+
 ### Build Windows Executable
 
 Once cross-compilation is complete, build the Windows Installer executable in the same shell with:
@@ -52,7 +59,8 @@ Once cross-compilation is complete, build the Windows Installer executable in th
     $ cd $GSL_WIN64DIR
     $ makensis GSL-WIN64.nsi
 
-It'll create the "GSL-WIN64.exe" file in $GSL_WIN64DIR.
+It'll create the "GSL-WIN64.exe" file in $GSL_WIN64DIR. Copy it over to a running instance of Microsoft Windows and double-click for installation.
+
 
 # License
 GSL-WIN64 is an installer for GSL, therefore inherits the [GPL license](http://www.gnu.org/copyleft/gpl.html).
