@@ -1,7 +1,7 @@
 # This installs the GSL libraries (compiled separately), builds an uninstaller, and
 # adds uninstall information to the registry for Add/Remove Programs
 
-!define APPNAME "gsl-2.7.1"
+!define APPNAME "gsl-2.8"
 !define COMPANYNAME "GSL-WIN64"
 !define DESCRIPTION "GNU Scientific Library"
 # These three must be integers
