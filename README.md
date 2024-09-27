@@ -1,6 +1,12 @@
 # GSL-WIN64
 Standalone 64-bit Windows Installer for the [GNU Scientific Library](https://www.gnu.org/software/gsl/). Can be installed without dependencies. Use from the [powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview) or with any IDE such as [Code::Blocks](https://www.codeblocks.org/), [geany](https://www.geany.org/) or [VS Code](https://code.visualstudio.com/). Tested with codeblocks.
 
+# Note
+This project is kinda deprecated.
+
+Better methods for running GSL on windows are available now, such as the [C/C++ extension to VSCode](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), which can be setup with GSL using [vcpkg](https://vcpkg.link/ports/gsl). Therefore, I won't be updating this repo anymore past gsl-2.8.
+
+
 # Download and Install
 
 If you just want to download and install the libraries, [click here](https://github.com/hariseldon99/GSL-WIN64/releases/) to obtain the installer.
